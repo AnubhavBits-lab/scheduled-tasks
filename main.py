@@ -5,8 +5,8 @@ import smtplib
 import random
 
 letters = ["letter_1", "letter_2", "letter_3"]
-MY_EMAIL = os.environ.get("parojansanskar2@gmail.com")
-MY_PASSWORD = os.environ.get("oatf jlep fihh xxmt")
+MY_EMAIL = os.environ.get(MY_EMAIL)
+MY_PASSWORD = os.environ.get(MY_PASSWORD)
 time = dt.datetime.now()
 with open("birthdays.csv", "r") as file:
     data = pd.read_csv(file)
