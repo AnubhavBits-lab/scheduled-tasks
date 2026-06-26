@@ -20,4 +20,4 @@ with open("birthdays.csv", "r") as file:
                     content = f.read()
                     new_content = content.replace("[NAME]", row["name"])
 
-                connection.sendmail(from_addr=MY_EMAIL, to_addrs=row.email, msg=f"Subject:Happy Birthday!\n\n{new_content}")
+                connection.sendmail(from_addr=MY_EMAIL, to_addrs=MY_EMAIL, msg=f"Subject:Happy Birthday!\n\n{new_content}")
